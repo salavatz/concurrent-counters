@@ -18,9 +18,6 @@ public class MagicCounter implements Counter {
     }
 
     private Integer getId() {
-        //for main
-        return Integer.parseInt(Thread.currentThread().getName().substring("Thread-".length()));
-        //for benchmark
-        // return Integer.parseInt(Thread.currentThread().getName().substring("com.sbt.concurrent.CounterBenchmark.MagicCounter-jmh-worker-".length()));
+        return (int) Thread.currentThread().getId();
     }
 }

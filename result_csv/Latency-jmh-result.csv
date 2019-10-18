@@ -1,0 +1,13 @@
+Benchmark,Mode,Threads,Samples,Score,Tail0,ScoreError,Tail1,Unit
+com.sbt.concurrent.LatencyBenchmark.ConcurrentCounter,thrpt,2,10,651904917,515170,15905716,676267,ops/s
+com.sbt.concurrent.LatencyBenchmark.ConcurrentCounter:pingConcurrentCounter,thrpt,2,10,260833010,961539,13838778,115141,ops/s
+com.sbt.concurrent.LatencyBenchmark.ConcurrentCounter:pongConcurrentCounter,thrpt,2,10,391071906,553631,9650577,619151,ops/s
+com.sbt.concurrent.LatencyBenchmark.LockCounter,thrpt,2,10,368208583,274843,26409480,787807,ops/s
+com.sbt.concurrent.LatencyBenchmark.LockCounter:pingLockCounter,thrpt,2,10,114588178,409140,5079608,210062,ops/s
+com.sbt.concurrent.LatencyBenchmark.LockCounter:pongLockCounter,thrpt,2,10,253620404,865703,30900064,599985,ops/s
+com.sbt.concurrent.LatencyBenchmark.MagicCounter,thrpt,2,10,509647892,088380,18634219,693740,ops/s
+com.sbt.concurrent.LatencyBenchmark.MagicCounter:pingMagicCounter,thrpt,2,10,508935539,909889,18907581,507882,ops/s
+com.sbt.concurrent.LatencyBenchmark.MagicCounter:pongMagicCounter,thrpt,2,10,712352,178491,706940,177528,ops/s
+com.sbt.concurrent.LatencyBenchmark.MutexCounter,thrpt,2,10,525089184,491736,26462442,470165,ops/s
+com.sbt.concurrent.LatencyBenchmark.MutexCounter:pingMutexCounter,thrpt,2,10,272460938,800509,11670524,047919,ops/s
+com.sbt.concurrent.LatencyBenchmark.MutexCounter:pongMutexCounter,thrpt,2,10,252628245,691227,24890685,080869,ops/s
