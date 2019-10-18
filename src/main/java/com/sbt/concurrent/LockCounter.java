@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class LockCounter implements Counter {
     ReadWriteLock lock = new ReentrantReadWriteLock();
-    private int i = 0;
+    private long i = 0;
 
     public void increment() {
         lock.writeLock().lock();

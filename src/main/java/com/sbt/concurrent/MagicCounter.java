@@ -7,14 +7,14 @@ import java.util.List;
 public class MagicCounter implements Counter {
 
     private int n = 100_000;
-    private List<Integer> labels = new ArrayList<>(Collections.nCopies(n, 0));
+    private List<Long> labels = new ArrayList<>(Collections.nCopies(n, 0L));
 
     public void increment() {
         labels.set(getId(), labels.get(getId()) + 1);
     }
 
     public long getValue() {
-        return labels.stream().mapToInt(Integer::intValue).sum();
+        return labels.stream().mapToLong(Long::longValue).sum();
     }
 
     private Integer getId() {
